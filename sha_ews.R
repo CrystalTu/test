@@ -11,4 +11,4 @@ SHAdata$Date <- as.Date(SHAdata$Date,"%Y/%m/%d")
 qplot(Date,Close,data=SHAdata,geom="line")
 
 #generic early warning signal 
-ews<-generic_ews(SHAdata$Close,detrending="first-diff",logtransform=TRUE)
+ews <- generic_ews(SHAdata$Close,detrending="first-diff",logtransform=TRUE)
